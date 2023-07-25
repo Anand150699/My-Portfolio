@@ -1,0 +1,278 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @font-face {
+            font-family: "SenBold";
+            src: url(./fonts/Sen-Bold.ttf);
+        }
+    *{
+        border-radius: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    /*Global classes stylings*/
+    
+    .flex{
+        display: flex;
+    }
+    .justify-cntr{
+        justify-content: center;
+    }
+    .justify-even{
+        justify-content: space-evenly;
+    }
+    .justify-btwn{
+        justify-content: space-between;
+    }
+    .justify-arnd{
+        justify-content: space-around;
+    }
+    .align-cntr{
+        align-items:  center;
+    }
+
+    .f-wrap{
+        flex-wrap: wrap;
+    }
+
+    hr{
+        color: gold;
+    }
+    header{
+        padding: 2vw 4vw;
+        background-color: silver;
+        border-radius: 10px;
+    }
+    .container{
+        padding: 5%;
+    }
+    a{
+
+        text-decoration: none;
+        color:black;
+        font-weight: bold;
+    }
+    header{
+        width: 100%;
+        padding: 0.5vw 0;
+    }
+    .brandLogo{
+      padding: 1vw 4vw;
+      font-weight: bold;
+      font-size: 200;    
+    }
+    .brandLogo span{
+        color: orange;
+        font-weight: bold;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    header nav a{
+        margin-right: 1rem;
+        padding: 1vw;
+        font-size: 1.5vw;
+   }
+    header nav a:hover{
+        background-color: antiquewhite;
+        border-radius: 5px;
+      
+    }
+    header nav a.active{
+        border-bottom: 2px solid orange;
+    }
+    .hero{
+        width: 100%;
+        padding: 2vw 4vw;
+    }
+    .rightPart img{
+        
+      
+       border-radius: 100%;
+       float: right;
+       border: 8px solid silver;  
+    }
+    .title{
+        font-size: 2.5rem;
+        margin-bottom: 1vw;
+    }
+
+    .desc{
+        font-size: 1.8rem;
+        margin-bottom: 1.5vw;
+    }
+    button{
+        padding: 1rem .4rem;
+        background-color: silver;
+        border: none;
+        outline: none;
+        font-family:SenBold;
+        font-weight: 800;
+        border-radius: 8px;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        color: black;
+    }
+    button:hover{
+        background-color: gold;
+       cursor: pointer;
+    }
+    .description{
+        
+        padding: 2vw 3vw;
+    }
+    .description h2{
+        margin-bottom: 1.2vw;
+    }
+    .leftPart.desc{
+        font-family: SenBold;
+        font-style: italic;
+    }
+   .abt{
+    margin-bottom: 2%;
+   }
+    ul{
+       
+        list-style-type: none;
+    }
+    header nav.navbarMenu ul li a{
+        margin: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    #contact{
+        margin-top: 5rem;
+    }
+    .abt{
+        color:black;
+        font-size: 2.5rem;
+    }
+    .vl{
+        border-left:0.1rem solid gold;
+        height: 250px;
+       padding-right: 1.5rem;
+       padding-left: 0.5rem;
+    }
+    
+    .skillHead {
+        padding: 3rem 0rem;
+    }
+
+   .skills img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .projectHead{
+        padding: 3rem 0rem;
+    }
+
+    @media screen and (max-width:800px){
+        .hero{
+            flex-direction: column-reverse;
+        }
+
+       
+        
+    }
+    
+
+
+
+     
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header class="flex justify-btwn align-cntr">
+        <div class="brandLogo"><span>P</span>ortfolio</div>
+        <nav class="navbarMenu">
+            <ul class="flex justify-cntr">
+            <li><a class="active" href="#about">About</a></li>
+            <hr></hr>
+            <li><a href="#project">Project</a></li>
+            <hr></hr>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero flex justify-arnd align-cntr">
+        <div class="leftPart">
+            <h2 class="title">Hi, my name is<span><b> Anand Khandelwal.</b>
+            </span></h2>
+            <h2 class="desc">Wanting to be a Web Developer with a one year of experience in IT sector.</h2>
+            <button href="#">GITHUB</button>
+            <button href="#">LINKEDIN</button>
+            <button href="#">DOWNLOAD CV</button>
+        </div>
+      
+        <div class="rightPart">
+            <img src="./318767113_127702980137181_8848630027725347153_n.jpg" alt="profilepic" class="profilePic">
+        </div>
+    </section>
+    <main>
+        <div id="about">
+            <h1 class="abt">About</h1>
+            <div class="aboutItem flex justify-arnd align-cntr ">
+                <div class="itm1">
+                <h2 class="flx">Education</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse deserunt doloribus nesciunt odio ratione veritatis sed alias facilis praesentium, cumque officiis non, perspiciatis aut, harum iure! Dicta harum obcaecati error!</p>  
+            </div>
+            <div class="vl"></div>
+            <div class="itm 3">
+                <h2 class=>Experience</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse deserunt doloribus nesciunt odio ratione veritatis sed alias facilis praesentium, cumque officiis non, perspiciatis aut, harum iure! Dicta harum obcaecati error!</p>
+            </div>
+            <div class="vl"></div>
+            <div class="itm3">
+                <h2 class="flx">Enabling skills</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse deserunt doloribus nesciunt odio ratione veritatis sed alias facilis praesentium, cumque officiis non, perspiciatis aut, harum iure! Dicta harum obcaecati error!s</p>
+            </div>
+            </div>
+            <vr></vr>
+        </div>
+        <div id="skill">
+            <div class="skillHead">
+                <h1>My Skills & Tools</h1>
+            </div>
+            <div class="skills flex f-wrap justify-even justify-cntr align-cntr">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png?w=740&t=st=1690203550~exp=1690204150~hmac=c64b1e551a124ae2e335dd4b4bae45f23735ceb046f68d6a3156bfad575df86c" alt="html" class="skill-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png?w=740&t=st=1690203520~exp=1690204120~hmac=5f403e15119ffaef6e73f10f664cb18202008d07e335a2f4dd501813e607cb69" alt="css" class="skill-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO_lgAfXpIjH2EnycWikAKUA4gEYI-CBhYq372Qdq6Ng&s" alt="javascript" class="skill-item">
+                
+    </div>
+</div>
+
+<div id="Project">
+    <div class="projectHead">
+        <h1>My Projects</h1>
+    </div>
+
+    <div class="ProjItem">
+
+    </div>
+    <div class="ProjItem">
+        
+    </div>
+    <div class="ProjItem">
+        
+    </div>
+    </div>
+
+<section class="skills"></section>    </main>
+    <footer id="contact">
+        <h1 class="flex justify-cntr">Hope you have got my portfolio interesting!</h1>
+        <P class="flex justify-cntr">You can ping me on:<a id="email" href="" target="__blank">abc@example.com</a></P>
+
+    </footer>
+    </div>
+</body>
+</html>
